@@ -26,6 +26,13 @@ npm run build
 npm run preview:host
 ```
 
+## Publicação web (GitHub Pages)
+
+O projeto já está com workflow de deploy em `.github/workflows/deploy-pages.yml`.
+
+- Qualquer push na `main` publica automaticamente.
+- URL esperada: `https://ericguerrize.github.io/FiguriinhasCopa/`
+
 ## Variáveis de ambiente
 
 Copie `.env.example` para `.env`.

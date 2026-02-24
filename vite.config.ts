@@ -3,7 +3,10 @@ import react from '@vitejs/plugin-react'
 import { VitePWA } from 'vite-plugin-pwa'
 
 // https://vite.dev/config/
+const isGithubActions = process.env.GITHUB_ACTIONS === 'true'
+
 export default defineConfig({
+  base: isGithubActions ? '/FiguriinhasCopa/' : '/',
   plugins: [
     react(),
     VitePWA({
